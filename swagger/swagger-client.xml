@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<swaggerClient>
+    <allowDomain>false</allowDomain>
+    <allowUuid>true</allowUuid>
+    <basePath>/v2</basePath>
+    <exposeAllServices>false</exposeAllServices>
+    <folderStructure>PATH</folderStructure>
+    <host>api.poeditor.com</host>
+    <lenient>true</lenient>
+    <operationAliases>
+        <property key="postProjectsList">project.list</property>
+        <property key="postLanguagesList">language.list</property>
+        <property key="postTermsList">term.list</property>
+    </operationAliases>
+    <operationIds>postTermsList</operationIds>
+    <operationIds>postLanguagesList</operationIds>
+    <operationIds>postProjectsList</operationIds>
+    <scheme>https</scheme>
+    <showInterfaces>false</showInterfaces>
+    <throwException>true</throwException>
+</swaggerClient>

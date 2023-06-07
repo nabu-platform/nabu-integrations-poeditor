@@ -1,0 +1,4 @@
+<structure name="projectProperties">
+    <field name="apiKey" type="java.lang.String"/>
+    <field name="projectId" type="java.lang.Long"/>
+</structure>

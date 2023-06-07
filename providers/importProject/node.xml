@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-06-07T14:40:38.639+02:00" lastModified="2023-06-07T16:27:59.770+02:00" leaf="true" version="62">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.utils.List.add</references>
+    <references>nabu.cms.translation.manage.crud.translationTermInstance.services.create</references>
+    <references>nabu.cms.translation.manage.crud.translationTerm.types.output</references>
+    <references>java.util.Date</references>
+    <references>nabu.cms.translation.manage.crud.translationTerm.services.list</references>
+    <references>nabu.cms.translation.manage.crud.translationTerm.services.create</references>
+    <references>nabu.utils.List.unique</references>
+    <references>nabu.cms.translation.services.getTopics</references>
+    <references>nabu.cms.translation.manage.crud.translationTermTopic.types.output</references>
+    <references>nabu.cms.translation.manage.crud.translationTermTopic.services.list</references>
+    <references>nabu.cms.translation.services.getLanguages</references>
+    <references>nabu.cms.translation.manage.crud.translationTransport.types.output</references>
+    <references>nabu.cms.translation.manage.crud.translationTermInstance.services.update</references>
+    <references>java.lang.String</references>
+    <references>nabu.integrations.poeditor.swagger.services.language.list</references>
+    <references>nabu.integrations.poeditor.swagger.services.term.list</references>
+    <references>nabu.cms.translation.manage.crud.translationBundle.types.output</references>
+    <references>nabu.integrations.poeditor.swagger.types.languagesListLong</references>
+    <references>nabu.cms.translation.database.types.translationLanguage</references>
+    <references>nabu.utils.Date.now</references>
+    <references>nabu.cms.core.types.emodel.core.MasterDataEntry</references>
+    <references>java.util.UUID</references>
+    <references>nabu.cms.translation.manage.crud.translationTermInstance.services.list</references>
+    <references>nabu.utils.List.addAll</references>
+    <references>nabu.integrations.poeditor.swagger.types.termsListFull</references>
+    <references>nabu.cms.translation.manage.crud.translationTermTopic.services.create</references>
+    <references>nabu.cms.translation.manage.crud.translationTermInstance.types.output</references>
+    <references>nabu.cms.translation.manage.crud.translationBundle.services.get</references>
+    <references>nabu.integrations.poeditor.providers.importProperties</references>
+    <references>nabu.cms.translation.specs.transport</references>
+    <references>java.lang.Object</references>
+    <references>nabu.cms.translation.manage.crud.translationTransport.services.get</references>
+</node>

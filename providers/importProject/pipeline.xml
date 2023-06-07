@@ -1,0 +1,24 @@
+<structure interface="nabu.cms.translation.specs.transport" name="pipeline">
+    <structure name="input" restrict="properties">
+        <structure definition="nabu.integrations.poeditor.providers.importProperties" name="properties"/>
+    </structure>
+    <structure name="output"/>
+    <structure collectionName="translationTransports" definition="nabu.cms.translation.manage.crud.translationTransport.types.output" name="transport"/>
+    <structure collectionName="translationBundles" definition="nabu.cms.translation.manage.crud.translationBundle.types.output" duplicate="id, created, modified" name="bundle" restrict="anonymized,componentId,enabled,languageId,modified,ownerId,path,priority,slug,started,stopped,title,verified,version"/>
+    <structure collectionName="translationLanguages" definition="nabu.cms.translation.database.types.translationLanguage" duplicate="id,created,modified" maxOccurs="unbounded" minOccurs="0" name="languages"/>
+    <structure definition="nabu.integrations.poeditor.swagger.types.languagesListLong" minOccurs="0" name="languageResult" namespace="nabu.integrations.poeditor.swagger.types"/>
+    <structure definition="nabu.integrations.poeditor.swagger.types.termsListFull" minOccurs="0" name="termResult" namespace="nabu.integrations.poeditor.swagger.types"/>
+    <structure collectionName="translationTerms" definition="nabu.cms.translation.manage.crud.translationTerm.types.output" maxOccurs="unbounded" minOccurs="0" name="existingTerms"/>
+    <structure collectionName="translationTerms" definition="nabu.cms.translation.manage.crud.translationTerm.types.output" minOccurs="0" name="existingTerm"/>
+    <structure collectionName="translationTermInstances" definition="nabu.cms.translation.manage.crud.translationTermInstance.types.output" maxOccurs="unbounded" minOccurs="0" name="termInstances"/>
+    <structure collectionName="translationTermInstances" definition="nabu.cms.translation.manage.crud.translationTermInstance.types.output" minOccurs="0" name="unverifiedTranslation"/>
+    <structure collectionName="translationTermInstances" definition="nabu.cms.translation.manage.crud.translationTermInstance.types.output" minOccurs="0" name="verifiedTranslation"/>
+    <structure collectionName="translationLanguages" definition="nabu.cms.translation.database.types.translationLanguage" duplicate="id,created,modified" minOccurs="0" name="currentLanguage"/>
+    <field minOccurs="0" name="now" type="java.util.Date"/>
+    <structure collectionName="masterDataEntries" definition="nabu.cms.core.types.emodel.core.MasterDataEntry" id="127-0-1-1-eb57550:15992d23a1e:-8000:00000000000011A7" maxOccurs="unbounded" minOccurs="0" name="existingTopics"/>
+    <structure collectionName="translationTermTopics" definition="nabu.cms.translation.manage.crud.translationTermTopic.types.output" maxOccurs="unbounded" minOccurs="0" name="existingTermTopics"/>
+    <field maxOccurs="unbounded" name="tagsToApply" type="java.lang.String"/>
+    <field maxOccurs="unbounded" name="newTags" type="java.lang.String"/>
+    <structure collectionName="masterDataEntries" definition="nabu.cms.core.types.emodel.core.MasterDataEntry" id="127-0-1-1-eb57550:15992d23a1e:-8000:00000000000011A7" minOccurs="0" name="existingTopic"/>
+    <structure collectionName="translationTermTopics" definition="nabu.cms.translation.manage.crud.translationTermTopic.types.output" minOccurs="0" name="existingTermTopic"/>
+</structure>
