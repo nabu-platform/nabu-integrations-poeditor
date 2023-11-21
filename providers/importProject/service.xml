@@ -479,6 +479,15 @@
 						<from>transport/name</from>
 						<to>instance/source</to>
 					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="e6ce2025e14c4b70912404edec99a80b"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>false</from>
+						<to>instance/operational</to>
+					</steps>
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 						disabled="false"
